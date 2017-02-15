@@ -14,6 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//queue test route
+Route::get('home/send', 'HomeController@send');
+
+
+//team and members 
 Route::get('teams/store', 'TeamsController@store');
 Route::get('team/updateteam/{id}', 'TeamsController@updateTeam');
 Route::get('team/destroy/{id}', 'TeamsController@destroy');
